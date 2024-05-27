@@ -5,7 +5,8 @@ struct Node{
     int data;
     struct Node* next;
 };
-struct Node* head;
+
+struct Node* head; //declared globally.
 
 void Insert(int x){
     struct Node* temp = (struct Node*)malloc(sizeof(struct Node));
