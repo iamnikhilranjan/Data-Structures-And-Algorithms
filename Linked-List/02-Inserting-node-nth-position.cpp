@@ -23,7 +23,7 @@ void Insert(int data, int n)
   Node *temp2 = head;
   for (int i = 0; i < n - 2; i++)
   {
-    temp2 = temp2->next; // after n-2 times , will point at (n-1)th node
+    temp2 = temp2->next; // after n-2 times , temp2 will point at (n-1)th node
   }
   temp1->next = temp2->next;
   temp2->next = temp1;
@@ -43,12 +43,12 @@ int main()
 {
   head = NULL; // Initialize head to NULL
 
-    Insert(2, 1); // List: 2
-    Insert(3, 2); // List: 2, 3
-    Insert(4, 1); // List: 4, 2, 3
-    Insert(5, 2); // List: 4, 5, 2, 3
+  Insert(2, 1); // List: 2
+  Insert(3, 2); // List: 2, 3
+  Insert(4, 1); // List: 4, 2, 3
+  Insert(5, 2); // List: 4, 5, 2, 3
 
-    Print(); // Output: 4 5 2 3
+  Print(); // Output: 4 5 2 3
 
-    return 0;
+  return 0;
 }
