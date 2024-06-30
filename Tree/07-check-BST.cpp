@@ -53,7 +53,7 @@ Node *Insert(Node *root, int data){
         root->data = data;
         root->left = root->right = NULL;
     }
-    else if( root->data <= data ){
+    else if( data <= root->data ){
         root = Insert(root->left, data);
     }
     else root = Insert(root->right, data);
